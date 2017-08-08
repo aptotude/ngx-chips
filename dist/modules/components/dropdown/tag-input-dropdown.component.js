@@ -15,16 +15,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-import { Component, ViewChild, forwardRef, Inject, TemplateRef, ContentChildren, Input, QueryList, HostListener } from '@angular/core';
+import { Component, ViewChild, forwardRef, TemplateRef, ContentChildren, Input, QueryList, HostListener } from '@angular/core';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/first';
 import { Ng2Dropdown } from 'ng2-material-dropdown';
 import { OptionsProvider } from '../../core';
-import { TagInputComponent } from '../../components';
+import { TagInputComponent } from '../../components/tag-input/tag-input';
 var defaults = forwardRef(function () { return OptionsProvider.defaults.dropdown; });
 var TagInputDropdown = (function () {
     function TagInputDropdown(tagInput) {
@@ -293,7 +290,6 @@ TagInputDropdown = __decorate([
         selector: 'tag-input-dropdown',
         templateUrl: './tag-input-dropdown.template.html'
     }),
-    __param(0, Inject(forwardRef(function () { return TagInputComponent; }))),
     __metadata("design:paramtypes", [TagInputComponent])
 ], TagInputDropdown);
 export { TagInputDropdown };

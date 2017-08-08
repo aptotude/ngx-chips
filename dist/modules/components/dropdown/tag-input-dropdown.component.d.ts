@@ -5,7 +5,7 @@ import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/first';
 import { Ng2Dropdown, Ng2MenuItem } from 'ng2-material-dropdown';
 import { TagModel } from '../../core';
-import { TagInputComponent } from '../../components';
+import { TagInputComponent } from '../../components/tag-input/tag-input';
 export declare class TagInputDropdown {
     tagInput: TagInputComponent;
     dropdown: Ng2Dropdown;

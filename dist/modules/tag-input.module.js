@@ -9,7 +9,12 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Ng2DropdownModule } from 'ng2-material-dropdown';
 import { HighlightPipe, DragProvider, OptionsProvider } from './core';
-import { DeleteIconComponent, TagComponent, TagInputComponent, TagInputDropdown, TagInputForm, TagRipple } from './components';
+import { DeleteIconComponent } from './components/icon/icon';
+import { TagComponent } from './components/tag/tag.component';
+import { TagInputComponent } from './components/tag-input/tag-input';
+import { TagInputDropdown } from './components/dropdown/tag-input-dropdown.component';
+import { TagInputForm } from './components/tag-input-form/tag-input-form.component';
+import { TagRipple } from './components/tag/tag-ripple.component';
 var COMPONENTS = [
     TagInputComponent,
     DeleteIconComponent,

@@ -47,11 +47,9 @@ import {
     TagInputOptions
 } from '../../core/providers';
 
-import {
-    TagInputForm,
-    TagInputDropdown,
-    TagComponent
-} from '../../components';
+import { TagInputForm } from '../../components/tag-input-form/tag-input-form.component';
+import { TagInputDropdown, } from '../../components/dropdown/tag-input-dropdown.component';
+import { TagComponent } from '../../components/tag/tag.component';
 
 import { animations } from './animations';
 

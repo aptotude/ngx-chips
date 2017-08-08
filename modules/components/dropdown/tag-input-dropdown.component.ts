@@ -2,7 +2,6 @@ import {
     Component,
     ViewChild,
     forwardRef,
-    Inject,
     TemplateRef,
     ContentChildren,
     Input,
@@ -20,7 +19,7 @@ import 'rxjs/add/operator/first';
 
 import { Ng2Dropdown, Ng2MenuItem } from 'ng2-material-dropdown';
 import { TagModel, TagInputDropdownOptions, OptionsProvider } from '../../core';
-import { TagInputComponent } from '../../components';
+import { TagInputComponent } from '../../components/tag-input/tag-input';
 
 const defaults: Type<TagInputDropdownOptions> = forwardRef(() => OptionsProvider.defaults.dropdown);
 
@@ -149,7 +148,7 @@ export class TagInputDropdown {
         });
     }
 
-    constructor(@Inject(forwardRef(() => TagInputComponent)) public tagInput: TagInputComponent) {}
+    constructor(public tagInput: TagInputComponent) {}
 
     /**
      * @name ngOnInit

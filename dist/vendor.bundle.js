@@ -7,13 +7,13 @@
 		exports["ngx-chips"] = factory(require("rxjs"));
 	else
 		root["ngx-chips"] = factory(root["rxjs"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_23__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE_29__) {
 return webpackJsonpngx_chips([0],{
 
-/***/ 23:
+/***/ 29:
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_23__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_29__;
 
 /***/ }),
 
@@ -21,11 +21,11 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_23__;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(0);
-__webpack_require__(13);
-__webpack_require__(4);
-__webpack_require__(12);
-__webpack_require__(23);
-module.exports = __webpack_require__(7);
+__webpack_require__(16);
+__webpack_require__(3);
+__webpack_require__(15);
+__webpack_require__(29);
+module.exports = __webpack_require__(6);
 
 
 /***/ })

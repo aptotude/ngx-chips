@@ -7,7 +7,9 @@ import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 import { TagInputAccessor, TagModel } from '../../core';
 import { DragProvider } from '../../core/providers';
-import { TagInputForm, TagInputDropdown, TagComponent } from '../../components';
+import { TagInputForm } from '../../components/tag-input-form/tag-input-form.component';
+import { TagInputDropdown } from '../../components/dropdown/tag-input-dropdown.component';
+import { TagComponent } from '../../components/tag/tag.component';
 export declare class TagInputComponent extends TagInputAccessor implements OnInit, AfterViewInit {
     private readonly renderer;
     readonly dragProvider: DragProvider;

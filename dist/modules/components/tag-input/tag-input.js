@@ -34,7 +34,9 @@ import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 import { TagInputAccessor, listen, constants } from '../../core';
 import { DragProvider, OptionsProvider } from '../../core/providers';
-import { TagInputForm, TagInputDropdown, TagComponent } from '../../components';
+import { TagInputForm } from '../../components/tag-input-form/tag-input-form.component';
+import { TagInputDropdown, } from '../../components/dropdown/tag-input-dropdown.component';
+import { TagComponent } from '../../components/tag/tag.component';
 import { animations } from './animations';
 var DragEvent = global.DragEvent;
 var CUSTOM_ACCESSOR = {
