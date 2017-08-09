@@ -2,7 +2,7 @@ import {
     Component,
     ViewChild,
     forwardRef,
-    Inject,
+    Injector,
     TemplateRef,
     ContentChildren,
     Input,
@@ -149,7 +149,9 @@ export class TagInputDropdown {
         });
     }
 
-    constructor(@Inject(forwardRef(() => TagInputComponent)) public tagInput: TagInputComponent) {}
+    public tagInput = this.injector.get(TagInputComponent);
+
+    constructor(private injector: Injector) {}
 
     /**
      * @name ngOnInit
