@@ -77,7 +77,7 @@
     "zone.js": "0.8.10"
   },
   "dependencies": {
-    "ng2-material-dropdown": "0.7.9-beta-3"
+    "ng2-material-dropdown": "git://github.com/jknisley/ng2-material-dropdown.git#build-fix"
   },
   "peerDependencies": {
     "@angular/common": "^4.2.0",
@@ -101,10 +101,11 @@
     "url": "https://github.com/Gbuomprisco/ngx-chips/issues"
   },
   "homepage": "https://github.com/Gbuomprisco/ngx-chips",
-  "main": "./dist/ngx-chips.bundle.js",
+  "main": "dist/ngx-chips.bundle.js",
+  "module": "dist/modules/tag-input.module.js",
+  "typings": "dist/modules/tag-input.module.d.ts",
   "files": [
     "dist",
-    "index.ts",
     "tsconfig.json",
     "tsconfig.aot.json"
   ]
